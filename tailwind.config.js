@@ -21,9 +21,17 @@ module.exports = {
         grain: "grain 1.5s steps(6) infinite",
         wiggle: "wiggle 4.5s ease-in-out infinite alternate",
         marquee: "marquee 30s linear infinite",
+        marquee11: "marquee 12.5s linear infinite",
         marquee2: "marquee2 30s linear infinite",
+        marquee22: "marquee2 12.5s linear infinite",
+        bounce: "bounce 3.5s ease-in-out infinite",
+        letterBounce: "letterBounce 4.5s ease-in-out infinite",
+        spin: "spin 10s linear infinite",
       },
     },
   },
-  plugins: [require("tailwind-scrollbar-hide")],
+  plugins: [
+    require("tailwindcss-animation-delay"),
+    require("tailwind-scrollbar-hide"),
+  ],
 };

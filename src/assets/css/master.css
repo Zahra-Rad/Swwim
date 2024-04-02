@@ -94,3 +94,24 @@
   }
   
 }
+@keyframes bounce {
+  0%,100%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-10px) rotate(2deg);
+  }
+}
+@keyframes letterBounce {
+  0%,100%{
+    transform: translateY(0) rotate(-9deg);
+  }
+  50%{
+    transform: translateY(-3px) rotate(-9deg);
+  }
+}
+@keyframes spin {
+  100%{
+    transform: rotate(1turn);
+  }
+}
