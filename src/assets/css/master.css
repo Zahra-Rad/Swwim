@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+@font-face {
+  font-family: greyReg;
+  src: url("../fonts/GreycliffCF-Regular.49865f21aa0799d62b28d71bdad8f478.woff2")
+    format("opentype");
+}
+@font-face {
+  font-family: greyMed;
+  src: url("../fonts/GreycliffCF-Medium.3181b296c85d51a32242a37e490e36a4.woff2")
+    format("opentype");
+}
+@font-face {
+  font-family: greyBold;
+  src: url("../fonts/GreycliffCF-Bold.6ee41831e1194ff7288912f327636649.woff2")
+    format("opentype");
+}
+@font-face {
+  font-family: beton;
+  src: url("../fonts/BatonTurbo-Bold.5edf2b2a60d32292320fd41e23e05ac2.woff2")
+    format("opentype");
+}
+
+@keyframes grain {
+  0%,
+  100% {
+    transform: translate(0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  30% {
+    transform: translate(3%, -15%);
+  }
+  50% {
+    transform: translate(12%, 9%);
+  }
+  70% {
+    transform: translate(9%, 4%);
+  }
+  90% {
+    transform: translate(-1%, 7%);
+  }
+}
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(4deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  60% {
+    transform: rotate(4deg);
+  }
+  80% {
+    transform: rotate(-4deg);
+  }
+  100% {
+    transform: rotate(4deg);
+  }
+}
+@keyframes marquee {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+  
+}
+@keyframes marquee2 {
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+  
+}
