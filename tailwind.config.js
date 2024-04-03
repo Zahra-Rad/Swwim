@@ -20,6 +20,7 @@ module.exports = {
       animation: {
         grain: "grain 1.5s steps(6) infinite",
         wiggle: "wiggle 4.5s ease-in-out infinite alternate",
+        wiggleFast: "wiggle 1s ease-in-out infinite alternate",
         marquee: "marquee 30s linear infinite",
         marquee11: "marquee 12.5s linear infinite",
         marquee2: "marquee2 30s linear infinite",
